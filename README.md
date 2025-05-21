@@ -1,5 +1,9 @@
 # Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search
 
+## Download data
+https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search/dataset_files
+
+
 ## Introduction
 
 We introduce the “Shopping Queries Data Set”, a large dataset of difficult search queries, released with the aim of fostering research in the area of semantic matching of queries and products. For each query, the dataset provides a list of up to 40 potentially relevant results, together with ESCI relevance judgements (Exact, Substitute, Complement, Irrelevant) indicating the relevance of the product to the query. Each query-product pair is accompanied by additional information. The dataset is multilingual, as it contains queries in English, Japanese, and Spanish.
@@ -97,7 +101,7 @@ del df_task_3["esci_label"]
 df_task_3_train = df_task_3[df_task_3["split"] == "train"]
 df_task_3_test = df_task_3[df_task_3["split"] == "test"]
 ```
-    
+
 ### Merge queries with sources (optional)
 ```
 df_examples_products_source = pd.merge(
